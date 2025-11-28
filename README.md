@@ -38,3 +38,18 @@ A aplicação foi desenhada para ser agnóstica ao sistema operacional (Windows,
    ```bash
    git clone git@github.com:matheusmoura0/desafio-clima-canac.git
    cd desafio-clima-canac
+
+2. **Suba a aplicação com Docker**
+Este comando irá baixar as imagens, instalar as dependências e iniciar o frontend e backend simultaneamente:
+
+    ```bash
+    docker compose up --build
+    Aguarde até ver as mensagens de que os servidores estão rodando.
+
+3. **Acesse a Aplicação**
+    ```bash
+    Abra seu navegador nos seguintes endereços:
+
+    Aplicação Web (Frontend): 👉 http://localhost:3000
+
+    Documentação da API (Swagger UI): 👉 http://localhost:8000/docs
