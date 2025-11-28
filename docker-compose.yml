@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  # Serviço do Backend
+  backend:
+    build: ./backend
+    container_name: clima-backend
+    ports:
+      - "8000:8000"
+    restart: always
+
+  # Serviço do Frontend
+  frontend:
+    build: ./frontend
+    container_name: clima-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend # Só inicia depois que o backend carregar
+    restart: always
